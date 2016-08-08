@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fasong"
+        android:text="发送一条普通广播"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/youxuguangbo"
+        android:onClick="doClick"
+        android:text="发送一条有序广播"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--滞留是指可以先发送广播，后注册，在接受，发送的广播会滞留一段时间-->
+    <Button
+        android:id="@+id/zhiliu"
+        android:onClick="doClick"
+        android:text="发送一条滞留广播"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
